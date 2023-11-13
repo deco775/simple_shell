@@ -28,38 +28,25 @@ Output                                                          Unless specified
 Example of error with sh:
 
 $echo "qwerty"|/bin/sh
-
 /bin/sh:1:qwerty: not found
-
 $echo "qwerty"|/bin/../bin/sh
-
 /bin/../bin/sh: 1: qwerty: not found
 $
 
 Same error with your program hsh:
 
-
 $echo "qwerty"|./hsh
-
 ./hsh: 1: qwerty: not found
-
 $echo "qwerty"|./././hsh
-
 ./././hsh: 1: qwerty: not found
 $
 
-
-# List of allowed functions and system calls
-access (man 2 access)
-
-chdir (man 2 chdir)
-
-close (man 2 close)
-
-closedir (man 3 closedir)
-
-execve (man 2 execve)
-
+# List of allowed functions and system calls<p>
+access (man 2 access)</br>
+chdir (man 2 chdir)</br>
+close (man 2 close)</br>
+closedir (man 3 closedir)</br>
+execve (man 2 execve)</br>
 exit (man 3 exit)
 
 _exit (man 2 _exit)
