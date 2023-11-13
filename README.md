@@ -40,7 +40,7 @@ $echo "qwerty" | ./hsh</br>
 $echo "qwerty"|./././hsh</br>
 ./././hsh: 1: qwerty: not found</br>
 $
-
+```
 # List of allowed functions and system calls
 access (man 2 access)</br>
 chdir (man 2 chdir)</br>
