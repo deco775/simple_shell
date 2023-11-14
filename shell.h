@@ -108,9 +108,9 @@ char *str_char(char *,char);
 char **tow_str(char *, char, unsigned int);
 char **tow_str2(char *, char);
 
-char *mem_set(char *, char, unsigned int);
+char *_memset(char *, char, unsigned int);
 void frfree(char **);
-void *re_alloc(void *, unsigned int, unsigned int);
+void *_realloc(void *, unsigned int, unsigned int);
 
 int freebuff(void **);
 
