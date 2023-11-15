@@ -72,7 +72,7 @@ typedef struct infpas
 typedef struct inblt
 {
 	int (*funct)(tsl_inf*);
-	char *thetype;
+	char *type;
 
 } table_inblt;
 
@@ -87,23 +87,23 @@ char *pathFnd(tsl_inf *, char *, char *);
 
 int hsh_loop(char **);
 
-void e_puts(char *);
-int charEput(char);
-int fd_put(char c, int fd);
+void _eputs(char *);
+int _charEput(char);
+int _fdput(char c, int fd);
 
-int str_len(char *);
-int str_cmp(char *, char *);
+int _strlen(char *);
+int _strcmp(char *, char *);
 char *strtWith(const char *, const char *);
-char *str_cat(char *, char *);
+char *_strcat(char *, char *);
 
-char *str_cpy(char *, char *);
-char *dup_str( const char *);
-void put_s(char *);
+char *_strcpy(char *, char *);
+char *_dupstr( const char *);
+void _puts(char *);
 int _putchar(char);
 
-char *strn_cpy(char *, char *, int);
-char *strn_cat(char *, char *, int);
-char *str_char(char *,char);
+char *_strncpy(char *, char *, int);
+char *_strncat(char *, char *, int);
+char *_strchar(char *,char);
 
 char **tow_str(char *, char, unsigned int);
 char **tow_str2(char *, char);
