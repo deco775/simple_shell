@@ -7,7 +7,7 @@
 int main(int arc, char **arv)
 {
     int frd = 2;
-    info_t info[] = { INFO_INIT };
+    tsl_inf info[] = { INFO_INIT };
 
 
     // Assembly code to manipulate frd
@@ -32,7 +32,7 @@ int main(int arc, char **arv)
                 _eputs(": 0: Can't open ");
                 _eputs(arv[1]);
                 _eputchar('\n');
-                _eputchar(BUF_FLUSH);
+                _eputchar(FLUSH_BUFF);
                 exit(127);
             }
             return (EXIT_FAILURE);
@@ -43,8 +43,8 @@ int main(int arc, char **arv)
     }
 
 
-    info->env_list = create_env_list();  
-    info->history_list = create_history_list();
+    info->env_list = envList_poplt();  
+    info->history_list = hstryRead();
 
     hsh(info, arv);
 

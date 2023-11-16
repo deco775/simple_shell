@@ -88,8 +88,9 @@ char *pathFnd(tsl_inf *, char *, char *);
 int hsh_loop(char **);
 
 void _eputs(char *);
-int _charEput(char);
-int _fdput(char c, int fd);
+int _eputchar(char);
+int _putfd(char c, int fd);
+int _putsfd(char *str, int fd);
 
 int _strlen(char *);
 int _strcmp(char *, char *);
@@ -140,15 +141,15 @@ void infClr(tsl_inf *);
 void infSet(tsl_inf *, char **);
 void inffFree(tsl_inf *, int);
 
-char *envGet(tsl_inf *, const char *);
-int envMine(tsl_inf *);
-int setEnvMine(tsl_inf *);
-int unsetmyEnv(tsl_inf *);
+char *_getenv(tsl_inf *, const char *);
+int  _myenv(tsl_inf *);
+int  _myenv(tsl_inf *);
+int _myunsetenv(tsl_inf *);
 int envList_poplt(tsl_inf *);
 
 char **envGet(tsl_inf *);
-int envUnst(tsl_inf *, char *);
-int envSt(tsl_inf *, char *, char *);
+int _unsetenv(tsl_inf *, char *);
+int _setenv(tsl_inf *, char *, char *);
 
 char *hstryFile_get(tsl_inf *info);
 int hstryWrte(tsl_inf *info);
